@@ -1,5 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
+import { NotificationManager } from 'react-notifications';
+
 import Input from './components/input/Input';
 import Button from './components/button/button';
 import Modal from './components/modal/modal';
@@ -24,6 +26,7 @@ function App() {
 			setData(res.data.data);
 		} catch (err) {
 			console.error(err);
+			NotificationManager.error(err.message);
 		}
 	}
 
