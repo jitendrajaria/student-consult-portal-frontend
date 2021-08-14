@@ -1,0 +1,86 @@
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	background: #5e5e5e;
+	color: var(--light-color);
+	z-index: 3;
+}
+.modal-header {
+	display: flex;
+	padding: 10px;
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	font-weight: bold;
+}
+
+.modal-header > button {
+	margin-left: auto;
+}
+.modal-body {
+	text-align: left;
+	padding: 10px 20px;
+	font-size: 14px;
+}
+
+.modal-body .form-group {
+	display: flex;
+	align-content: center;
+	vertical-align: middle;
+	justify-content: flex-start;
+	margin-bottom: 5px;
+}
+
+.form-group :nth-child(1) {
+	align-self: center;
+}
+
+.form-group :nth-child(2) {
+	margin-left: auto;
+}
+.modal-body input {
+	height: 1.5rem;
+	border-radius: 0rem;
+	padding-left: 5px;
+	outline: none;
+	background-color: var(--light-color);
+	border: none;
+}
+
+.modal-body select {
+	height: 1.5rem;
+	border-radius: 0rem;
+	padding-left: 5px;
+	outline: none;
+	background-color: var(--light-color);
+	border: none;
+	width: 65%;
+}
+
+.modal-footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+}
+
+.button-group > button {
+	padding: 10px;
+}
+.button-group :nth-child(2) {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+}
+
+.button-group .text {
+	margin: 0;
+}
+
+@media (max-width: 480px) {
+	.button-group > button > .text {
+		display: block;
+	}
+}

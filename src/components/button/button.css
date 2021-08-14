@@ -1,0 +1,19 @@
+button {
+	outline: none;
+	border: none;
+	background-color: var(--light-color);
+	color: var(--dark-color);
+	margin: 2px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+button > .text {
+	margin-left: 5px;
+}
+
+@media (max-width: 480px) {
+	button > .text {
+		display: none;
+	}
+}
